@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Arcadia Clash is a competitive tournament hub for managing brackets, teams, and live matches." />
+    <meta property="og:title" content="Arcadia Clash - Tournament Hub" />
+    <meta property="og:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcadiaclash.gg/" />
+    <meta property="og:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arcadia Clash - Tournament Hub" />
+    <meta name="twitter:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <title>Arcadia Clash - Team Management</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ARCADIA-0001"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-ARCADIA-0001");
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">AC</span>
+          <span class="logo-text">Arcadia Clash</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#brackets">Brackets</a>
+          <a href="index.html#schedule">Schedule</a>
+          <a href="index.html#community">Community</a>
+          <a href="signup.html">Tournament Sign Up</a>
+          <a href="user-signup.html">User Sign Up</a>
+          <a href="schedule.html">Schedule List</a>
+          <a href="team-management.html" class="active">Team Management</a>
+          <a href="player-dashboard.html">Player Dashboard</a>
+          <a href="player-profile.html">Player Profile</a>
+          <a href="team-profile.html">Team Profile</a>
+          <a href="match-center.html">Match Center</a>
+          <a href="event-detail.html">Event Detail</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="support.html">Support</a>
+          <a href="rules.html">Rules</a>
+          <a href="standings.html">Standings</a>
+          <a href="admin-console.html">Admin Console</a>
+          <a href="seeding.html">Seeding</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="auth-status" data-auth-status>
+          <a class="btn ghost" href="login.html" data-auth-signin>Sign In</a>
+          <div class="auth-user is-hidden" data-auth-user></div>
+          <button class="btn ghost is-hidden" type="button" data-auth-logout>Sign Out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="team-management">
+      <section class="team-hero">
+        <div>
+          <p class="tag">Splatoon 3 • Team Hub</p>
+          <h1>Manage your roster, roles, and match readiness.</h1>
+          <p class="subhead">
+            Keep your squad coordinated with role assignments, availability tracking, and roster
+            lock reminders before the bracket goes live.
+          </p>
+        </div>
+        <div class="team-actions">
+          <button class="btn primary">Invite player</button>
+          <button class="btn secondary">Upload team logo</button>
+        </div>
+      </section>
+
+      <section class="team-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Roster</h2>
+            <button class="btn ghost">Edit roles</button>
+          </div>
+          <div class="roster-list">
+            <div class="roster-card">
+              <div class="avatar">IK</div>
+              <div>
+                <h3>InkKnight</h3>
+                <p>Captain · Slayer</p>
+              </div>
+              <span class="status-pill open">Confirmed</span>
+            </div>
+            <div class="roster-card">
+              <div class="avatar">SV</div>
+              <div>
+                <h3>Seavolt</h3>
+                <p>Support · Anchor</p>
+              </div>
+              <span class="status-pill">Awaiting</span>
+            </div>
+            <div class="roster-card">
+              <div class="avatar">NY</div>
+              <div>
+                <h3>NeonYuki</h3>
+                <p>Flex · Sub</p>
+              </div>
+              <span class="status-pill open">Confirmed</span>
+            </div>
+            <div class="roster-card">
+              <div class="avatar">TR</div>
+              <div>
+                <h3>TideRunner</h3>
+                <p>Support · Starter</p>
+              </div>
+              <span class="status-pill">Pending</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Team readiness</h2>
+            <button class="btn ghost">Update status</button>
+          </div>
+          <div class="readiness-grid">
+            <div>
+              <h3>Scrim schedule</h3>
+              <p>3 scrims booked · Next: Apr 6</p>
+            </div>
+            <div>
+              <h3>Loadout lock</h3>
+              <p>Due in 4 days</p>
+            </div>
+            <div>
+              <h3>Roster lock</h3>
+              <p>2 players pending</p>
+            </div>
+          </div>
+          <div class="readiness-card">
+            <h3>Upcoming scrims</h3>
+            <ul>
+              <li>Apr 6 · 7:00 PM PT · vs Neon Nautilus</li>
+              <li>Apr 9 · 8:30 PM PT · vs Lagoon Legends</li>
+            </ul>
+            <button class="btn secondary">Manage scrims</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-notes">
+        <div>
+          <h2>Team notes</h2>
+          <p>Add match prep notes and highlight key strategies for captains and substitutes.</p>
+        </div>
+        <div class="notes-card">
+          <p>
+            Focus on Rainmaker rotation and mid control. Assign InkKnight to open lanes and keep
+            Seavolt on anchor defense.
+          </p>
+          <button class="btn ghost">Edit notes</button>
+        </div>
+      </section>
+
+      <section class="team-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Create a team</h2>
+            <span class="pill">API connected</span>
+          </div>
+          <form id="team-create-form" class="stacked-form">
+            <label class="field">
+              <span>Team name</span>
+              <input type="text" name="teamName" placeholder="Lagoon Legends" required />
+            </label>
+            <button class="btn primary" type="submit">Create team</button>
+            <p id="team-create-status" class="helper-text" role="status"></p>
+          </form>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Add a team member</h2>
+            <span class="pill">Captain access</span>
+          </div>
+          <form id="team-member-form" class="stacked-form">
+            <p class="helper-text">Sign in to update rosters with organizer permissions.</p>
+            <label class="field">
+              <span>Team ID</span>
+              <input type="number" name="teamId" placeholder="1" required />
+            </label>
+            <label class="field">
+              <span>User ID</span>
+              <input type="number" name="userId" placeholder="42" required />
+            </label>
+            <label class="field">
+              <span>Role</span>
+              <input type="text" name="role" placeholder="Captain" required />
+            </label>
+            <button class="btn primary" type="submit">Add member</button>
+            <p id="team-member-status" class="helper-text" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Need to add a substitute?</h3>
+        <p>Roster changes stay open until 48 hours before the event.</p>
+      </div>
+      <button class="btn primary">Request roster update</button>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="team-management.js"></script>
+  </body>
+</html>

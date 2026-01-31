@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Arcadia Clash is a competitive tournament hub for managing brackets, teams, and live matches." />
+    <meta property="og:title" content="Arcadia Clash - Tournament Hub" />
+    <meta property="og:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcadiaclash.gg/" />
+    <meta property="og:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arcadia Clash - Tournament Hub" />
+    <meta name="twitter:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <title>Arcadia Clash - Player Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ARCADIA-0001"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-ARCADIA-0001");
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">AC</span>
+          <span class="logo-text">Arcadia Clash</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#brackets">Brackets</a>
+          <a href="index.html#schedule">Schedule</a>
+          <a href="index.html#community">Community</a>
+          <a href="signup.html">Tournament Sign Up</a>
+          <a href="user-signup.html">User Sign Up</a>
+          <a href="schedule.html">Schedule List</a>
+          <a href="team-management.html">Team Management</a>
+          <a href="player-dashboard.html" class="active">Player Dashboard</a>
+          <a href="player-profile.html">Player Profile</a>
+          <a href="team-profile.html">Team Profile</a>
+          <a href="match-center.html">Match Center</a>
+          <a href="event-detail.html">Event Detail</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="support.html">Support</a>
+          <a href="rules.html">Rules</a>
+          <a href="standings.html">Standings</a>
+          <a href="admin-console.html">Admin Console</a>
+          <a href="seeding.html">Seeding</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="auth-status" data-auth-status>
+          <a class="btn ghost" href="login.html" data-auth-signin>Sign In</a>
+          <div class="auth-user is-hidden" data-auth-user></div>
+          <button class="btn ghost is-hidden" type="button" data-auth-logout>Sign Out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="player-dashboard">
+      <section class="dashboard-hero">
+        <div>
+          <p class="tag">Arcadia ID • Player Hub</p>
+          <h1>Welcome back, InkNova.</h1>
+          <p class="subhead">
+            Track your performance, upcoming matches, and team invites in one personalized
+            dashboard.
+          </p>
+        </div>
+        <div class="dashboard-actions">
+          <button class="btn primary">Edit profile</button>
+          <button class="btn secondary">Share stats</button>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Season stats</h2>
+            <button class="btn ghost">View full stats</button>
+          </div>
+          <div class="stat-grid">
+            <div>
+              <h3>18</h3>
+              <p>Matches played</p>
+            </div>
+            <div>
+              <h3>72%</h3>
+              <p>Win rate</p>
+            </div>
+            <div>
+              <h3>2.8</h3>
+              <p>K/D ratio</p>
+            </div>
+            <div>
+              <h3>+214</h3>
+              <p>Ink differential</p>
+            </div>
+          </div>
+          <div class="progress-card">
+            <div>
+              <h3>Rank progress</h3>
+              <p>Diamond II · 140 / 200 points</p>
+            </div>
+            <div class="progress-bar">
+              <span style="width: 70%"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Upcoming matches</h2>
+            <button class="btn ghost">Open calendar</button>
+          </div>
+          <div class="match-list">
+            <div>
+              <h3>Apr 6 · Scrim vs Neon Nautilus</h3>
+              <p>7:00 PM PT · Best of 3</p>
+            </div>
+            <div>
+              <h3>Apr 9 · Qualifier Round 2</h3>
+              <p>8:30 PM PT · Stream B</p>
+            </div>
+            <div>
+              <h3>Apr 12 · Regional Playoffs</h3>
+              <p>6:00 PM PT · Stream A</p>
+            </div>
+          </div>
+          <button class="btn secondary">RSVP to match</button>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Team invites</h2>
+            <button class="btn ghost">Manage invites</button>
+          </div>
+          <div class="invite-list">
+            <div class="invite-card">
+              <div>
+                <h3>Lagoon Legends</h3>
+                <p>Seeking flex player · 4 scrims/week</p>
+              </div>
+              <div class="invite-actions">
+                <button class="btn secondary">View</button>
+                <button class="btn ghost">Decline</button>
+              </div>
+            </div>
+            <div class="invite-card">
+              <div>
+                <h3>Solar Splatter</h3>
+                <p>Backup anchor · LAN available</p>
+              </div>
+              <div class="invite-actions">
+                <button class="btn secondary">View</button>
+                <button class="btn ghost">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Highlights</h2>
+            <button class="btn ghost">Upload clip</button>
+          </div>
+          <div class="highlight-card">
+            <h3>Top clip of the week</h3>
+            <p>Rainmaker triple splat · 24k views</p>
+            <button class="btn primary">Watch clip</button>
+          </div>
+          <div class="highlight-grid">
+            <div>
+              <h4>Recent</h4>
+              <p>5 new clips</p>
+            </div>
+            <div>
+              <h4>Achievements</h4>
+              <p>3 badges unlocked</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Stay match-ready</h3>
+        <p>Enable alerts for roster changes and match reminders.</p>
+      </div>
+      <button class="btn primary">Enable alerts</button>
+    </footer>
+    <script src="auth.js"></script>
+  </body>
+</html>

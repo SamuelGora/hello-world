@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Arcadia Clash is a competitive tournament hub for managing brackets, teams, and live matches." />
+    <meta property="og:title" content="Arcadia Clash - Tournament Hub" />
+    <meta property="og:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcadiaclash.gg/" />
+    <meta property="og:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arcadia Clash - Tournament Hub" />
+    <meta name="twitter:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <title>Arcadia Clash - Admin Console</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ARCADIA-0001"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-ARCADIA-0001");
+    </script>
+  </head>
+  <body data-requires-auth="true" data-required-roles="Admin/Staff,Organizer">
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">AC</span>
+          <span class="logo-text">Arcadia Clash</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#brackets">Brackets</a>
+          <a href="index.html#schedule">Schedule</a>
+          <a href="index.html#community">Community</a>
+          <a href="signup.html">Tournament Sign Up</a>
+          <a href="user-signup.html">User Sign Up</a>
+          <a href="schedule.html">Schedule List</a>
+          <a href="team-management.html">Team Management</a>
+          <a href="player-dashboard.html">Player Dashboard</a>
+          <a href="match-center.html">Match Center</a>
+          <a href="player-profile.html">Player Profile</a>
+          <a href="team-profile.html">Team Profile</a>
+          <a href="event-detail.html">Event Detail</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="support.html">Support</a>
+          <a href="rules.html">Rules</a>
+          <a href="standings.html">Standings</a>
+          <a href="admin-console.html" class="active">Admin Console</a>
+          <a href="seeding.html">Seeding</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="auth-status" data-auth-status>
+          <a class="btn ghost" href="login.html" data-auth-signin>Sign In</a>
+          <div class="auth-user is-hidden" data-auth-user></div>
+          <button class="btn ghost is-hidden" type="button" data-auth-logout>Sign Out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="admin-console">
+      <section class="panel auth-gate is-hidden" data-auth-gate>
+        <h2>Organizer access required</h2>
+        <p class="subhead">
+          Sign in with an organizer or admin account to manage approvals, brackets, and broadcasts.
+        </p>
+        <a class="btn primary" href="login.html">Sign in to continue</a>
+      </section>
+      <div class="admin-protected" data-auth-protected>
+        <section class="admin-hero">
+          <div>
+            <p class="tag">Organizer Tools</p>
+            <h1>Admin console</h1>
+            <p class="subhead">
+              Approve teams, lock brackets, and coordinate broadcasts with one streamlined organizer
+              dashboard.
+            </p>
+            <p class="helper-text" id="admin-auth-status" aria-live="polite"></p>
+          </div>
+          <div class="admin-actions">
+            <button class="btn primary">Publish update</button>
+            <button class="btn secondary">Open incident log</button>
+          </div>
+        </section>
+
+      <section class="admin-grid">
+        <div class="panel" data-required-roles="Admin/Staff">
+          <div class="panel-header">
+            <h2>Pending approvals</h2>
+            <button class="btn ghost">View all</button>
+          </div>
+          <div class="approval-list">
+            <div class="approval-card">
+              <div>
+                <h3>Neon Nautilus</h3>
+                <p>Roster lock request · 4 starters, 1 sub</p>
+              </div>
+              <div class="approval-actions">
+                <button class="btn secondary">Approve</button>
+                <button class="btn ghost">Review</button>
+              </div>
+            </div>
+            <div class="approval-card">
+              <div>
+                <h3>Lagoon Legends</h3>
+                <p>Logo update · awaiting asset review</p>
+              </div>
+              <div class="approval-actions">
+                <button class="btn secondary">Approve</button>
+                <button class="btn ghost">Review</button>
+              </div>
+            </div>
+            <div class="approval-card">
+              <div>
+                <h3>Volt Tide</h3>
+                <p>Emergency substitute request</p>
+              </div>
+              <div class="approval-actions">
+                <button class="btn secondary">Approve</button>
+                <button class="btn ghost">Review</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" data-required-roles="Admin/Staff,Organizer">
+          <div class="panel-header">
+            <h2>Broadcast checklist</h2>
+            <button class="btn ghost">Assign</button>
+          </div>
+          <ul class="checklist">
+            <li><span class="status-pill open">On track</span> Stream overlays uploaded</li>
+            <li><span class="status-pill">Pending</span> Casters confirmed</li>
+            <li><span class="status-pill open">On track</span> Replay backups enabled</li>
+            <li><span class="status-pill">Pending</span> Sponsor read locked</li>
+          </ul>
+          <button class="btn secondary">Open rundown</button>
+        </div>
+      </section>
+
+      <section class="admin-grid">
+        <div class="panel" data-required-roles="Admin/Staff,Organizer">
+          <div class="panel-header">
+            <h2>Bracket control</h2>
+            <button class="btn ghost">Sync</button>
+          </div>
+          <div class="control-grid">
+            <div>
+              <h3>Bracket status</h3>
+              <p>Seeding locked · Publish in 3 hours</p>
+            </div>
+            <div>
+              <h3>Reports</h3>
+              <p>2 open disputes</p>
+            </div>
+            <div>
+              <h3>Match room</h3>
+              <p>12 rooms active</p>
+            </div>
+          </div>
+          <button class="btn primary">Lock bracket</button>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Incident log</h2>
+            <button class="btn ghost">Export</button>
+          </div>
+          <div class="incident-list">
+            <div>
+              <h3>Network outage - Match 6</h3>
+              <p>Resolved · 2:10 PM</p>
+            </div>
+            <div>
+              <h3>Rules clarification requested</h3>
+              <p>Pending · 1:55 PM</p>
+            </div>
+            <div>
+              <h3>Code of conduct warning</h3>
+              <p>Resolved · 1:40 PM</p>
+            </div>
+          </div>
+          <button class="btn ghost">Open incident room</button>
+        </div>
+      </section>
+
+      <section class="admin-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Log admin action</h2>
+            <span class="pill">Admin only</span>
+          </div>
+          <form id="admin-action-form" class="stacked-form">
+            <p class="helper-text">Signed-in sessions power admin actions.</p>
+            <label class="field">
+              <span>Action</span>
+              <input type="text" name="action" placeholder="Roster lock approved" required />
+            </label>
+            <label class="field">
+              <span>Target type</span>
+              <input type="text" name="targetType" placeholder="team" />
+            </label>
+            <label class="field">
+              <span>Target ID</span>
+              <input type="number" name="targetId" placeholder="12" />
+            </label>
+            <label class="field">
+              <span>Notes</span>
+              <textarea name="notes" rows="3" placeholder="Optional notes"></textarea>
+            </label>
+            <button class="btn primary" type="submit">Log action</button>
+            <p id="admin-action-status" class="helper-text" role="status"></p>
+          </form>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Create tournament</h2>
+            <span class="pill">Organizer access</span>
+          </div>
+          <form id="admin-tournament-form" class="stacked-form">
+            <p class="helper-text">Signed-in sessions power organizer workflows.</p>
+            <label class="field">
+              <span>Tournament name</span>
+              <input type="text" name="name" placeholder="Spring Showdown" required />
+            </label>
+            <label class="field">
+              <span>Status</span>
+              <input type="text" name="status" placeholder="draft" />
+            </label>
+            <label class="field">
+              <span>Starts at</span>
+              <input type="datetime-local" name="startsAt" />
+            </label>
+            <label class="field">
+              <span>Ends at</span>
+              <input type="datetime-local" name="endsAt" />
+            </label>
+            <button class="btn primary" type="submit">Create tournament</button>
+            <p id="admin-tournament-status" class="helper-text" role="status"></p>
+          </form>
+        </div>
+      </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Need more admin tools?</h3>
+        <p>Invite additional staff or request elevated permissions.</p>
+      </div>
+      <button class="btn primary">Manage staff</button>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="admin-console.js"></script>
+  </body>
+</html>
