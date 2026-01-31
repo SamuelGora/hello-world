@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Arcadia Clash is a competitive tournament hub for managing brackets, teams, and live matches." />
+    <meta property="og:title" content="Arcadia Clash - Tournament Hub" />
+    <meta property="og:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcadiaclash.gg/" />
+    <meta property="og:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arcadia Clash - Tournament Hub" />
+    <meta name="twitter:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <title>Arcadia Clash - Sign In</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ARCADIA-0001"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-ARCADIA-0001");
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">AC</span>
+          <span class="logo-text">Arcadia Clash</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#brackets">Brackets</a>
+          <a href="index.html#schedule">Schedule</a>
+          <a href="index.html#community">Community</a>
+          <a href="signup.html">Tournament Sign Up</a>
+          <a href="user-signup.html">User Sign Up</a>
+          <a href="schedule.html">Schedule List</a>
+          <a href="faq.html">FAQ</a>
+          <a href="team-management.html">Team Management</a>
+          <a href="player-dashboard.html">Player Dashboard</a>
+          <a href="player-profile.html">Player Profile</a>
+          <a href="team-profile.html">Team Profile</a>
+          <a href="match-center.html">Match Center</a>
+          <a href="event-detail.html">Event Detail</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="support.html">Support</a>
+          <a href="rules.html">Rules</a>
+          <a href="standings.html">Standings</a>
+          <a href="admin-console.html">Admin Console</a>
+          <a href="seeding.html">Seeding</a>
+        </div>
+        <div class="auth-status" data-auth-status>
+          <a class="btn ghost" href="login.html" data-auth-signin>Sign In</a>
+          <div class="auth-user is-hidden" data-auth-user></div>
+          <button class="btn ghost is-hidden" type="button" data-auth-logout>Sign Out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="auth">
+      <section class="auth-hero">
+        <p class="tag">Arcadia Clash Account</p>
+        <h1>Sign in to manage your tournament journey.</h1>
+        <p class="subhead">
+          Access team tools, manage brackets, and unlock organizer actions with your Arcadia ID.
+        </p>
+      </section>
+
+      <section class="auth-card">
+        <h2>Sign in</h2>
+        <p class="form-note">
+          Enter your email and password to receive a session token for admin and team tools.
+        </p>
+        <form id="login-form">
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Your password" required />
+          </label>
+          <button class="btn primary full" type="submit">Sign in</button>
+          <p id="login-status" class="helper-text" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Need an Arcadia ID?</h3>
+        <p>Create an account to register teams and receive tournament alerts.</p>
+      </div>
+      <a class="btn secondary" href="user-signup.html">Create account</a>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

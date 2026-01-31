@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Arcadia Clash is a competitive tournament hub for managing brackets, teams, and live matches." />
+    <meta property="og:title" content="Arcadia Clash - Tournament Hub" />
+    <meta property="og:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcadiaclash.gg/" />
+    <meta property="og:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arcadia Clash - Tournament Hub" />
+    <meta name="twitter:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <title>Arcadia Clash - Standings</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ARCADIA-0001"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-ARCADIA-0001");
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">AC</span>
+          <span class="logo-text">Arcadia Clash</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#brackets">Brackets</a>
+          <a href="index.html#schedule">Schedule</a>
+          <a href="index.html#community">Community</a>
+          <a href="signup.html">Tournament Sign Up</a>
+          <a href="user-signup.html">User Sign Up</a>
+          <a href="schedule.html">Schedule List</a>
+          <a href="team-management.html">Team Management</a>
+          <a href="player-dashboard.html">Player Dashboard</a>
+          <a href="match-center.html">Match Center</a>
+          <a href="player-profile.html">Player Profile</a>
+          <a href="team-profile.html">Team Profile</a>
+          <a href="event-detail.html">Event Detail</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="support.html">Support</a>
+          <a href="rules.html">Rules</a>
+          <a href="standings.html" class="active">Standings</a>
+          <a href="admin-console.html">Admin Console</a>
+          <a href="seeding.html">Seeding</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="auth-status" data-auth-status>
+          <a class="btn ghost" href="login.html" data-auth-signin>Sign In</a>
+          <div class="auth-user is-hidden" data-auth-user></div>
+          <button class="btn ghost is-hidden" type="button" data-auth-logout>Sign Out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="standings">
+      <section class="standings-hero">
+        <div>
+          <p class="tag">Splatoon 3 • Season Leaderboard</p>
+          <h1>Standings & Leaderboard</h1>
+          <p class="subhead">
+            Track rankings, seed points, and performance trends as teams climb toward the finals.
+          </p>
+        </div>
+        <div class="standings-actions">
+          <button class="btn secondary">Filter by region</button>
+          <button class="btn ghost">Export CSV</button>
+        </div>
+      </section>
+
+      <section class="standings-table">
+        <div class="standings-header">
+          <h2>Top 10 teams</h2>
+          <div class="standings-meta" id="standings-meta">Updated moments ago</div>
+        </div>
+        <p id="standings-status" class="helper-text" role="status"></p>
+        <div class="table-row header">
+          <span>Rank</span>
+          <span>Team</span>
+          <span>Record</span>
+          <span>Seed Points</span>
+          <span>Streak</span>
+        </div>
+        <div id="standings-rows"></div>
+      </section>
+
+      <section class="standings-insights">
+        <div>
+          <h2>Performance insights</h2>
+          <p>Identify breakout teams and watch for streaks heading into playoffs.</p>
+        </div>
+        <div class="insight-grid">
+          <div>
+            <h3>Best offense</h3>
+            <p>Crimson Circuit · 68% map control</p>
+          </div>
+          <div>
+            <h3>Fast riser</h3>
+            <p>Solar Splatter · +4 positions</p>
+          </div>
+          <div>
+            <h3>Most improved</h3>
+            <p>Echo Flux · +210 points</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Want the full leaderboard?</h3>
+        <p>Download the standings to share with your community.</p>
+      </div>
+      <button class="btn primary">Download standings</button>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="standings.js"></script>
+  </body>
+</html>
