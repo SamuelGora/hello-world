@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Arcadia Clash is a competitive tournament hub for managing brackets, teams, and live matches." />
+    <meta property="og:title" content="Arcadia Clash - Tournament Hub" />
+    <meta property="og:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcadiaclash.gg/" />
+    <meta property="og:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arcadia Clash - Tournament Hub" />
+    <meta name="twitter:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <title>Arcadia Clash - Tournament Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ARCADIA-0001"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-ARCADIA-0001");
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#">
+          <span class="logo-mark">AC</span>
+          <span class="logo-text">Arcadia Clash</span>
+        </a>
+        <div class="nav-links">
+          <a href="#features" class="active">Features</a>
+          <a href="#brackets">Brackets</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#community">Community</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="user-signup.html">User Sign Up</a>
+          <a href="schedule.html">Schedule List</a>
+          <a href="faq.html">FAQ</a>
+          <a href="team-management.html">Team Management</a>
+          <a href="player-dashboard.html">Player Dashboard</a>
+          <a href="player-profile.html">Player Profile</a>
+          <a href="team-profile.html">Team Profile</a>
+          <a href="match-center.html">Match Center</a>
+          <a href="event-detail.html">Event Detail</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="support.html">Support</a>
+          <a href="rules.html">Rules</a>
+          <a href="standings.html">Standings</a>
+          <a href="admin-console.html">Admin Console</a>
+          <a href="seeding.html">Seeding</a>
+        </div>
+        <div class="auth-status" data-auth-status>
+          <a class="btn ghost" href="login.html" data-auth-signin>Sign In</a>
+          <div class="auth-user is-hidden" data-auth-user></div>
+          <button class="btn ghost is-hidden" type="button" data-auth-logout>Sign Out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="tag">Season 12 • Registration Open</p>
+          <h1>Run pro-level gaming tournaments in one place.</h1>
+          <p class="subhead">
+            Arcadia Clash helps organizers create brackets, manage teams, and stream matches with a
+            command center built for competitive play.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary">Create Tournament</button>
+            <button class="btn secondary">View Live Events</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h3>3,200+</h3>
+              <p>Teams registered this month</p>
+            </div>
+            <div>
+              <h3>48 hrs</h3>
+              <p>Avg. setup time saved</p>
+            </div>
+            <div>
+              <h3>98%</h3>
+              <p>Stream uptime last season</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-header">
+            <h2>Tonight's Main Event</h2>
+            <span class="pill">Live</span>
+          </div>
+          <div class="matchup">
+            <div>
+              <p class="team-name">Nebula Wolves</p>
+              <p class="team-rank">#4 Seed</p>
+            </div>
+            <span class="vs">VS</span>
+            <div>
+              <p class="team-name">Crimson Circuit</p>
+              <p class="team-rank">#1 Seed</p>
+            </div>
+          </div>
+          <div class="match-info">
+            <p>Grand Arena • 7:30 PM PT</p>
+            <p>Best of 5 • 24k watching</p>
+          </div>
+          <a class="stream-link" href="https://www.twitch.tv/" aria-label="Watch live on Twitch">
+            <span class="stream-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path
+                  d="M5.5 3.5h15v10.6l-3.8 3.9h-4.4l-2.2 2.1h-2.2v-2.1H4.5V5.1L5.5 3.5zm13.3 1.9H7.1v10h3.4v2.2l2.2-2.2h4.3l2.8-2.8V5.4zm-4.5 3.1h1.6v4.8h-1.6V8.5zm-4.3 0h1.6v4.8h-1.6V8.5z"
+                />
+              </svg>
+            </span>
+            <span>Watch live on Twitch</span>
+          </a>
+          <button class="btn primary full">Watch Stream</button>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <h2>Everything a tournament needs.</h2>
+        <div class="feature-grid">
+          <article>
+            <h3>Dynamic brackets</h3>
+            <p>Auto-seeding, double elimination, and live updates that sync with broadcasts.</p>
+          </article>
+          <article>
+            <h3>Team command center</h3>
+            <p>Roster management, check-in reminders, and in-game status updates.</p>
+          </article>
+          <article>
+            <h3>Broadcast overlays</h3>
+            <p>Export overlays, countdowns, and sponsor panels directly to stream suites.</p>
+          </article>
+          <article>
+            <h3>Prize fulfillment</h3>
+            <p>Track payouts, merch drops, and sponsor rewards with one dashboard.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="brackets" class="brackets">
+        <div>
+          <h2>Live bracket preview</h2>
+          <p>
+            Follow every round in real time. Fans can view team stats, highlights, and MVP picks as
+            the bracket evolves.
+          </p>
+          <button class="btn secondary">Explore the Bracket</button>
+        </div>
+        <div class="bracket-card">
+          <div class="round">
+            <h4>Quarterfinals</h4>
+            <ul>
+              <li>Solstice 3 - 1 Echo Flux</li>
+              <li>Crimson 2 - 0 Nova Bloom</li>
+              <li>Nebula 3 - 2 Ion Rift</li>
+              <li>Volt 2 - 1 Riftwalkers</li>
+            </ul>
+          </div>
+          <div class="round">
+            <h4>Semifinals</h4>
+            <ul>
+              <li>Solstice 1 - 3 Crimson</li>
+              <li>Nebula 2 - 3 Volt</li>
+            </ul>
+          </div>
+          <div class="round">
+            <h4>Finals</h4>
+            <ul>
+              <li>Crimson vs Volt</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="schedule">
+        <div class="schedule-header">
+          <h2>Upcoming schedule</h2>
+          <button class="btn ghost">Export Calendar</button>
+        </div>
+        <div class="schedule-grid">
+          <div class="schedule-card">
+            <p class="date">Mar 22</p>
+            <h3>Rookie Sprint</h3>
+            <p>Open qualifier · 64 teams</p>
+          </div>
+          <div class="schedule-card">
+            <p class="date">Apr 02</p>
+            <h3>Midnight Masters</h3>
+            <p>Invite only · 16 teams</p>
+          </div>
+          <div class="schedule-card">
+            <p class="date">Apr 18</p>
+            <h3>Arcadia Clash Finals</h3>
+            <p>LAN event · 6,000 seats</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="community" class="community">
+        <div>
+          <h2>Built for players and fans.</h2>
+          <p>
+            Chat, highlight reels, and fan quests keep the community engaged from registration to
+            the final match.
+          </p>
+        </div>
+        <div class="community-panel">
+          <div>
+            <h3>Live chat & clips</h3>
+            <p>Share moments instantly with integrated clipping and moderation tools.</p>
+          </div>
+          <div>
+            <h3>Creator quests</h3>
+            <p>Reward viewers with badges and merch for watching and sharing streams.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Ready to host your next tournament?</h3>
+        <p>Spin up a bracket in minutes and invite teams with a single link.</p>
+      </div>
+      <button class="btn primary">Start Free Trial</button>
+    </footer>
+    <script src="auth.js"></script>
+  </body>
+</html>

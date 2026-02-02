@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Arcadia Clash is a competitive tournament hub for managing brackets, teams, and live matches." />
+    <meta property="og:title" content="Arcadia Clash - Tournament Hub" />
+    <meta property="og:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcadiaclash.gg/" />
+    <meta property="og:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arcadia Clash - Tournament Hub" />
+    <meta name="twitter:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <title>Arcadia Clash - Splatoon 3 Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ARCADIA-0001"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-ARCADIA-0001");
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">AC</span>
+          <span class="logo-text">Arcadia Clash</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#brackets">Brackets</a>
+          <a href="index.html#schedule">Schedule</a>
+          <a href="index.html#community">Community</a>
+          <a href="signup.html" class="active">Sign Up</a>
+          <a href="user-signup.html">User Sign Up</a>
+          <a href="schedule.html">Schedule List</a>
+          <a href="faq.html">FAQ</a>
+          <a href="team-management.html">Team Management</a>
+          <a href="player-dashboard.html">Player Dashboard</a>
+          <a href="player-profile.html">Player Profile</a>
+          <a href="team-profile.html">Team Profile</a>
+          <a href="match-center.html">Match Center</a>
+          <a href="event-detail.html">Event Detail</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="support.html">Support</a>
+          <a href="rules.html">Rules</a>
+          <a href="standings.html">Standings</a>
+          <a href="admin-console.html">Admin Console</a>
+          <a href="seeding.html">Seeding</a>
+        </div>
+        <div class="auth-status" data-auth-status>
+          <a class="btn ghost" href="login.html" data-auth-signin>Sign In</a>
+          <div class="auth-user is-hidden" data-auth-user></div>
+          <button class="btn ghost is-hidden" type="button" data-auth-logout>Sign Out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="signup">
+      <section class="signup-hero">
+        <p class="tag">Splatoon 3 • Open Registration</p>
+        <h1>Join the Splatoon 3 Turf War Showdown.</h1>
+        <p class="subhead">
+          Register as a solo competitor or lock in your squad. We will match individual players into
+          balanced teams and confirm brackets within 48 hours of registration closing.
+        </p>
+        <div class="signup-details">
+          <div>
+            <h3>April 20 - 22</h3>
+            <p>Online qualifiers · Finals on April 28</p>
+          </div>
+          <div>
+            <h3>$5,000 Prize Pool</h3>
+            <p>Cash, gear, and sponsor bundles</p>
+          </div>
+          <div>
+            <h3>All Regions</h3>
+            <p>Custom time slots for NA, EU, and APAC</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="signup-forms">
+        <div class="form-card">
+          <h2>Individual player sign up</h2>
+          <p class="form-note">Ideal for free agents and solo entrants.</p>
+          <form id="individual-signup-form">
+            <label>
+              Player handle
+              <input type="text" name="playerHandle" placeholder="InkStorm" required />
+            </label>
+            <label>
+              Email address
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+            <label>
+              Region
+              <select name="region" required>
+                <option value="">Select region</option>
+                <option>North America</option>
+                <option>Europe</option>
+                <option>Asia Pacific</option>
+                <option>South America</option>
+              </select>
+            </label>
+            <label>
+              Role preference
+              <select name="rolePreference" required>
+                <option value="">Select role</option>
+                <option>Slayer</option>
+                <option>Support</option>
+                <option>Anchor</option>
+                <option>Flex</option>
+              </select>
+            </label>
+            <label>
+              Availability
+              <input type="text" name="availability" placeholder="Weekends after 5pm" required />
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" required />
+              I agree to the tournament rules and code of conduct.
+            </label>
+            <button class="btn primary full" type="submit">Reserve my spot</button>
+            <p id="individual-signup-status" class="helper-text" role="status"></p>
+          </form>
+        </div>
+
+        <div class="form-card">
+          <h2>Team sign up</h2>
+          <p class="form-note">For squads ready to compete together.</p>
+          <form id="team-signup-form">
+            <label>
+              Team name
+              <input type="text" name="teamName" placeholder="Neon Nautilus" required />
+            </label>
+            <label>
+              Captain name
+              <input type="text" name="captainName" placeholder="Alex Rivera" required />
+            </label>
+            <label>
+              Captain email
+              <input type="email" name="captainEmail" placeholder="captain@email.com" required />
+            </label>
+            <label>
+              Team size
+              <select name="teamSize" required>
+                <option value="">Select size</option>
+                <option>4 starters</option>
+                <option>4 + 1 substitute</option>
+                <option>4 + 2 substitutes</option>
+              </select>
+            </label>
+            <label>
+              Preferred time slot
+              <select name="timeSlot" required>
+                <option value="">Select time slot</option>
+                <option>NA Evening</option>
+                <option>EU Prime</option>
+                <option>APAC Night</option>
+              </select>
+            </label>
+            <label>
+              Team contact handle
+              <input type="text" name="contactHandle" placeholder="@neonnautilus" required />
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" required />
+              We agree to the tournament rules and roster lock policy.
+            </label>
+            <button class="btn primary full" type="submit">Register team</button>
+            <p id="team-signup-status" class="helper-text" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Need help with registration?</h3>
+        <p>Email support@arcadiaclash.gg or join the Discord for instant assistance.</p>
+      </div>
+      <button class="btn secondary">Join Discord</button>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="signup.js"></script>
+  </body>
+</html>
