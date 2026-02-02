@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Arcadia Clash is a competitive tournament hub for managing brackets, teams, and live matches." />
+    <meta property="og:title" content="Arcadia Clash - Tournament Hub" />
+    <meta property="og:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcadiaclash.gg/" />
+    <meta property="og:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arcadia Clash - Tournament Hub" />
+    <meta name="twitter:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <title>Arcadia Clash - Bracket Seeding</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ARCADIA-0001"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-ARCADIA-0001");
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">AC</span>
+          <span class="logo-text">Arcadia Clash</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#brackets">Brackets</a>
+          <a href="index.html#schedule">Schedule</a>
+          <a href="index.html#community">Community</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="user-signup.html">User Sign Up</a>
+          <a href="schedule.html">Schedule List</a>
+          <a href="faq.html">FAQ</a>
+          <a href="team-management.html">Team Management</a>
+          <a href="player-dashboard.html">Player Dashboard</a>
+          <a href="player-profile.html">Player Profile</a>
+          <a href="team-profile.html">Team Profile</a>
+          <a href="match-center.html">Match Center</a>
+          <a href="event-detail.html">Event Detail</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="support.html">Support</a>
+          <a href="rules.html">Rules</a>
+          <a href="standings.html">Standings</a>
+          <a href="admin-console.html">Admin Console</a>
+          <a href="seeding.html" class="active">Seeding</a>
+        </div>
+        <div class="auth-status" data-auth-status>
+          <a class="btn ghost" href="login.html" data-auth-signin>Sign In</a>
+          <div class="auth-user is-hidden" data-auth-user></div>
+          <button class="btn ghost is-hidden" type="button" data-auth-logout>Sign Out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="seeding">
+      <section class="seeding-hero">
+        <div>
+          <p class="tag">Splatoon 3 • Bracket Setup</p>
+          <h1>Seed the bracket before the ink hits the floor.</h1>
+          <p class="subhead">
+            Review team performance, apply seed locks, and generate the final bracket order for the
+            Splatoon 3 Turf War Showdown.
+          </p>
+        </div>
+        <div class="seeding-actions">
+          <button class="btn primary">Auto-seed by rank</button>
+          <button class="btn secondary">Import standings CSV</button>
+        </div>
+      </section>
+
+      <section class="seeding-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Seeding queue</h2>
+            <button class="btn ghost">Shuffle</button>
+          </div>
+          <ul class="seed-list">
+            <li>
+              <span class="seed">#1</span>
+              <div>
+                <h3>Crimson Circuit</h3>
+                <p>4-0 record · +28 ink ratio</p>
+              </div>
+              <span class="status locked">Locked</span>
+            </li>
+            <li>
+              <span class="seed">#2</span>
+              <div>
+                <h3>Nebula Wolves</h3>
+                <p>3-1 record · +18 ink ratio</p>
+              </div>
+              <span class="status">Pending</span>
+            </li>
+            <li>
+              <span class="seed">#3</span>
+              <div>
+                <h3>Neon Nautilus</h3>
+                <p>3-1 record · +14 ink ratio</p>
+              </div>
+              <span class="status">Pending</span>
+            </li>
+            <li>
+              <span class="seed">#4</span>
+              <div>
+                <h3>Lagoon Legends</h3>
+                <p>2-2 record · +6 ink ratio</p>
+              </div>
+              <span class="status locked">Locked</span>
+            </li>
+            <li>
+              <span class="seed">#5</span>
+              <div>
+                <h3>Solar Splatter</h3>
+                <p>2-2 record · +4 ink ratio</p>
+              </div>
+              <span class="status">Pending</span>
+            </li>
+            <li>
+              <span class="seed">#6</span>
+              <div>
+                <h3>Tidal Tempest</h3>
+                <p>1-3 record · -8 ink ratio</p>
+              </div>
+              <span class="status">Pending</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Bracket preview</h2>
+            <button class="btn ghost">Export PDF</button>
+          </div>
+          <div class="bracket-preview">
+            <div class="bracket-round">
+              <h3>Quarterfinals</h3>
+              <div class="match">
+                <span>Crimson Circuit</span>
+                <span class="vs">vs</span>
+                <span>Tidal Tempest</span>
+              </div>
+              <div class="match">
+                <span>Nebula Wolves</span>
+                <span class="vs">vs</span>
+                <span>Solar Splatter</span>
+              </div>
+              <div class="match">
+                <span>Neon Nautilus</span>
+                <span class="vs">vs</span>
+                <span>Lagoon Legends</span>
+              </div>
+              <div class="match">
+                <span>Wildcard Winner</span>
+                <span class="vs">vs</span>
+                <span>Qualifier #2</span>
+              </div>
+            </div>
+            <div class="bracket-round">
+              <h3>Semifinals</h3>
+              <div class="match dim">Match 5 Winner vs Match 6 Winner</div>
+              <div class="match dim">Match 7 Winner vs Match 8 Winner</div>
+            </div>
+            <div class="bracket-round">
+              <h3>Finals</h3>
+              <div class="match dim">Winners advance to Grand Finals</div>
+            </div>
+          </div>
+          <div class="seeding-summary">
+            <div>
+              <h4>Seed locks</h4>
+              <p>2 locked · 4 pending</p>
+            </div>
+            <div>
+              <h4>Bracket type</h4>
+              <p>Double elimination</p>
+            </div>
+            <div>
+              <h4>Next step</h4>
+              <p>Publish bracket by Apr 12</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Ready to publish the bracket?</h3>
+        <p>Lock in the seeds and notify teams once the bracket goes live.</p>
+      </div>
+      <button class="btn primary">Publish bracket</button>
+    </footer>
+    <script src="auth.js"></script>
+  </body>
+</html>

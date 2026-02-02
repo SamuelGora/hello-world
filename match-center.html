@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Arcadia Clash is a competitive tournament hub for managing brackets, teams, and live matches." />
+    <meta property="og:title" content="Arcadia Clash - Tournament Hub" />
+    <meta property="og:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arcadiaclash.gg/" />
+    <meta property="og:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arcadia Clash - Tournament Hub" />
+    <meta name="twitter:description" content="Manage teams, brackets, and live matches in one competitive tournament platform." />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/png?text=Arcadia+Clash" />
+    <title>Arcadia Clash - Match Center</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ARCADIA-0001"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-ARCADIA-0001");
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">AC</span>
+          <span class="logo-text">Arcadia Clash</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#brackets">Brackets</a>
+          <a href="index.html#schedule">Schedule</a>
+          <a href="index.html#community">Community</a>
+          <a href="signup.html">Tournament Sign Up</a>
+          <a href="user-signup.html">User Sign Up</a>
+          <a href="schedule.html">Schedule List</a>
+          <a href="team-management.html">Team Management</a>
+          <a href="player-dashboard.html">Player Dashboard</a>
+          <a href="match-center.html" class="active">Match Center</a>
+          <a href="player-profile.html">Player Profile</a>
+          <a href="team-profile.html">Team Profile</a>
+          <a href="event-detail.html">Event Detail</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="support.html">Support</a>
+          <a href="rules.html">Rules</a>
+          <a href="standings.html">Standings</a>
+          <a href="admin-console.html">Admin Console</a>
+          <a href="seeding.html">Seeding</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="auth-status" data-auth-status>
+          <a class="btn ghost" href="login.html" data-auth-signin>Sign In</a>
+          <div class="auth-user is-hidden" data-auth-user></div>
+          <button class="btn ghost is-hidden" type="button" data-auth-logout>Sign Out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="match-center">
+      <section class="match-hero">
+        <div>
+          <p class="tag" id="match-tag">Live Match • Best of 5</p>
+          <h1 id="match-title">Crimson Circuit vs Nebula Wolves</h1>
+          <p class="subhead" id="match-meta">
+            Grand Arena · Round 3 · 24,000 viewers. Catch the stream, stats, and live timeline in one
+            place.
+          </p>
+        </div>
+        <div class="match-actions">
+          <button class="btn primary">Watch live stream</button>
+          <button class="btn secondary">Follow match</button>
+        </div>
+      </section>
+
+      <section class="match-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Scoreboard</h2>
+            <button class="btn ghost">View recap</button>
+          </div>
+          <p id="match-data-status" class="helper-text" role="status"></p>
+          <div class="scoreboard">
+            <div class="team-score">
+              <div class="team-info">
+                <div class="avatar">CC</div>
+                <div>
+                  <h3 id="match-home-name">Crimson Circuit</h3>
+                  <p id="match-home-record">#1 Seed · 3-1</p>
+                </div>
+              </div>
+              <span class="score" id="match-home-score">2</span>
+            </div>
+            <div class="team-score">
+              <div class="team-info">
+                <div class="avatar">NW</div>
+                <div>
+                  <h3 id="match-away-name">Nebula Wolves</h3>
+                  <p id="match-away-record">#4 Seed · 2-2</p>
+                </div>
+              </div>
+              <span class="score" id="match-away-score">1</span>
+            </div>
+          </div>
+          <div class="map-list">
+            <div>
+              <h4>Map 1 · Splat Zones</h4>
+              <p>Crimson Circuit wins 204 - 178</p>
+            </div>
+            <div>
+              <h4>Map 2 · Tower Control</h4>
+              <p>Nebula Wolves wins 100 - 78</p>
+            </div>
+            <div>
+              <h4>Map 3 · Rainmaker</h4>
+              <p>Crimson Circuit wins 83 - 54</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Live stats</h2>
+            <button class="btn ghost">Toggle view</button>
+          </div>
+          <div class="stat-grid">
+            <div>
+              <h3>62%</h3>
+              <p>Paint control</p>
+            </div>
+            <div>
+              <h3>18</h3>
+              <p>Team wipes</p>
+            </div>
+            <div>
+              <h3>43</h3>
+              <p>Specials used</p>
+            </div>
+            <div>
+              <h3>2:14</h3>
+              <p>Avg. push time</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <h3>Live timeline</h3>
+            <ul>
+              <li>2:14 PM · Crimson Circuit captures checkpoint</li>
+              <li>2:10 PM · Nebula Wolves wipe mid control</li>
+              <li>2:05 PM · InkNova lands triple splat</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="match-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Player highlights</h2>
+            <button class="btn ghost">View all clips</button>
+          </div>
+          <div class="highlight-list">
+            <div class="highlight-card">
+              <h3>InkNova</h3>
+              <p>Rainmaker steal · 12k views</p>
+              <button class="btn secondary">Watch</button>
+            </div>
+            <div class="highlight-card">
+              <h3>Seavolt</h3>
+              <p>Zone hold streak · 8k views</p>
+              <button class="btn secondary">Watch</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Stream chat</h2>
+            <button class="btn ghost">Moderate</button>
+          </div>
+          <div class="chat-box">
+            <p><strong>HydraFan:</strong> That checkpoint play was insane!</p>
+            <p><strong>InkGear:</strong> Nebula Wolves still have time to clutch.</p>
+            <p><strong>ClipsBot:</strong> New highlight clipped by @InkNova</p>
+          </div>
+          <button class="btn primary">Open chat</button>
+        </div>
+      </section>
+
+      <section class="match-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Report match result</h2>
+            <span class="pill">Organizer access</span>
+          </div>
+          <form id="match-result-form" class="stacked-form">
+            <p class="helper-text">Sign in with organizer access to submit match results.</p>
+            <label class="field">
+              <span>Match ID</span>
+              <input type="number" name="matchId" placeholder="10" required />
+            </label>
+            <label class="field">
+              <span>Home score</span>
+              <input type="number" name="homeScore" placeholder="3" required />
+            </label>
+            <label class="field">
+              <span>Away score</span>
+              <input type="number" name="awayScore" placeholder="1" required />
+            </label>
+            <label class="field">
+              <span>Winner team ID</span>
+              <input type="number" name="winnerTeamId" placeholder="4" />
+            </label>
+            <label class="field">
+              <span>Notes</span>
+              <textarea name="notes" rows="3" placeholder="Overtime decision"></textarea>
+            </label>
+            <button class="btn primary" type="submit">Submit result</button>
+            <p id="match-result-status" class="helper-text" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Stay tuned for the next match</h3>
+        <p>Enable match alerts to get notified when the next map goes live.</p>
+      </div>
+      <button class="btn primary">Enable match alerts</button>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="match-center.js"></script>
+  </body>
+</html>
